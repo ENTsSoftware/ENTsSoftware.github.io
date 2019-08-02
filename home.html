@@ -19,6 +19,11 @@
 	<style type="text/css">
 		.top{ background:#202020;}
 		.div_foot {position:fixed;bottom:0px;left:0px;text-align:center;line-height:50px;width:100%;background:#EEEEEE;}
+		.rights{text-align:right;}
+		a:link {color: #EEEEEE}
+		a:visited {color: #EEEEEE}
+		a:hover {color: #EE0000}
+		a:active {color: #EE0000}
 	</style>
 	<!-- 结束插入 -->
 	<body bgcolor="#EEEEEE">
@@ -31,7 +36,12 @@
 				<!-- 换行符号 -->
 				<b style="background-color:#202020;color:#EEEEEE;"><img src="./3.png"  alt="ENTs software" width="32" height="32"/>ENTs Software 官方网站</b>
 				<!-- 在框架中插入图像与加粗自定义颜色字符 -->
-				<a align="right";href="./index.html">返回目录</a>
+				<div class="rights">
+				<!-- 引入css -->
+					<a href="./index.html">返回目录</a>
+					<!-- 在框架中插入链接 -->
+				</div>
+				<!-- 结束引用 -->
 				<br/>
 				<!-- 换行符号 -->
 				<b style="color:#202020;">`</b> 
@@ -40,10 +50,22 @@
 			<!-- 结束插入框架 -->
 		</div>
 			<center>
+			<h1>欢迎进入ENTs Software官方网站</h1>
 			<h2>ENTS Software是一个为开源软件编写功能的业余组织,我们期待您的加入。</h2>
 			<p>加入本组织几乎不需要任何条件，不论你是编程爱好者，还是刚刚入门的小白，在这里都有你的一席之地</p>
 			<p>有意者请加微信：16622353093</p>
 			</center>
+			<div class="div_foot">
+			<!-- 引入css -->
+				<footer>
+				<!-- 插入一个页脚框架 -->
+					<p>copyright (c) ENTs Software 2012-2019</p>
+					<!-- 在框架中插入正常文本 -->
+					<br/>
+					<!-- 换行符号 -->
+				</footer>
+				<!-- 结束插入框架 -->
+			</div>
+			<!-- 结束引入 -->
 	</body>
-	</html>
-			
+</html>
