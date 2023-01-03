@@ -8,13 +8,13 @@
 		<!-- 这是百度的验证码 -->
 		<link rel="shortcut icon" href="./2.png"/>
 		<!-- 这是标签页中网站的图像 -->
-		<title>ENTs software官方网站</title>
+		<title>清遥主页</title>
 		<!-- 这是标签页中网站的名称 -->
 		<meta name="keywords" content="ENTs, ENTssoftware, ents software, ENTSSOFTWARE官方网站, ENTs Software官方网站, ENTSSOFTWARE官网, ENTs Software官网"/>
 		<!-- 这是搜索引擎中网站的关键字 -->
 		<meta name="description" content="欢迎进入ENTs Software官方网站"/>
 		<!-- 这是搜索引擎中网站的描述 -->
-		<meta name="author" content="清遥GUO"/>
+		<meta name="author" content="清遥Singal"/>
 		<!-- 这是网站的作者（就是我啦） 是不会显示的 -->
 		<style type="text/css">
 		/* 开始定义css */
@@ -52,6 +52,8 @@
 			/* 定义css"info3"用本结构填满整个网页的宽的40%，文本位置向页面的左边对齐，页面距网页左侧0px */
 			.leftl{position:fixed;left:10px;text-align:left;width:auto;background:#BBBBBB;float:left;}
 			/* 定义css"leftl"的位置不可移动，页面距网页左侧10px，文本位置向页面的左边对齐，用本结构自动填充，背景颜色为#BBBBBB，的位置向页面的右面对齐且可以与另一元素在同一行显示 */
+			input.bdbtn {width: 65px;height: 30px;line-height: 30px;font: 14px \5b8b\4f53;cursor: pointer;outline: none;display: inline-block;text-align: center;color: #fff;border: none;background-color: #1a89ed;}
+			input.bdtext {width: 60%;padding-left: 5px;margin-left: 10px;margin-right: 10px;height: 30px;line-height: 30px;}
 		</style>
 		<!-- 结束定义css -->
 	</head>
@@ -64,7 +66,8 @@
 			<!-- 插入一个在顶部的框架 -->
 				<br/>
 				<!-- 换行符号 -->
-				<b style="background-color:#202020;color:#EEEEEE;"><img src="./3.png"  alt="ENTs software" width="32" height="32"/>ENTs Software 官方网站</b>
+				<div style="background-color:#202020;color:#EEEEEE;float:left"><b><img src="./3.png"  alt="ENTs software" width="32" height="32"/>ENTs Software 官方网站</b></div>
+				<div align="center" style="color:#EEEEEE;text-indent:-8em;font-size:27px"><b>清遥主页</b></div>
 				<!-- 在框架中插入图像与加粗自定义颜色字符 -->
 				<div class="rights">
 				<!-- 引入css -->
@@ -87,27 +90,85 @@
 			<br/>
 			<!-- 换行符号 -->
 			<br/>
-			<!-- 换行符号 -->
-			<br/>
-			<!-- 换行符号 -->
-			<br/>
-			<!-- 换行符号 -->
-			<h1>Sorry, we are still testing...</h1>
-			<!-- 在框架中插入1号标题 -->
-			<br/>
-			<!-- 换行符号 -->
-			<p>If you want to content us please call us at +86 166 2235 3093</p>
-			<!-- 在框架中插入正常文本 -->
-			<br/>
-			<!-- 换行符号 -->
-			<br/>
-			<!-- 换行符号 -->
-			<br/>
-			<!-- 换行符号 -->
-			<font color="#EEEEEE">本文本仅是为保证本网站正常显示编写的</font>
-			<!-- 在框架中插入自定义颜色字符 -->
+			<h4>使用简洁主页，成就高效人生</h4>
+			<div style='overflow:hidden'>
+				<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+					<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w"> 
+					<input class='bdtext' type="text"  onfocus="checkHttps" name="word"  size="80">
+					<input class='bdbtn' type="submit"value="搜索">
+				</form>
+				<script>
+				function(){
+					var b=window.BaiduHttps={_option:{}};
+					var f=function(){if(d()){i()}else{c("http")}};
+				function d(){
+					var k=(navigator&&navigator.userAgent)?navigator.userAgent:"",j=new RegExp(/msie 6/i),l=j.test(k);return !l}
+				function i(){h({url:"https://www.baidu.com/con",tn:"zhanzhang"})}
+				function c(j){b._option.protocol=j;b._option.checked=true}function e(){return(new Date()).getTime().toString(16)}
+				function h(l){var k=l.url?l.url:"https://www.baidu.com/con",j=document.createElement("script");
+				j.onload=function(){};
+				j.onerror=function(){c("http")};
+				j.src=k+"?from="+l.tn;
+				document.body.appendChild(j)}b.callbacks=function(j){if(typeof j==="object"){if(j.s==0){c("https")}else{c("http")}}};
+					var a;b.useHttps=function(){if(this._option.timeout===true){
+					f();
+					this._option.timeout=false;
+					this._option.time_checked=false;
+					a=setTimeout(g,1000*120)};
+					if(!this._option.time_checked){
+						a=setTimeout(g,1000*120)}
+						if(this._option.checked&&this._option.protocol=="https"){return {s:1,ssl_code:"ssl10_" + e()};}else{return {s:0,ssl_code:"ssl9_" + e()};}};
+					function g(){b._option.time_checked=true;
+						b._option.timeout=true}f()})();
+				</script>
+				<script>
+				function checkHttps () {
+					BaiduHttps.useHttps();    
+					};
+				function baiduWithHttps (formname) {
+					var data = BaiduHttps.useHttps();
+					if (data.s === 0) {
+						return true;
+						}
+					else {
+						formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+						return true;
+					}
+				};
+				</script> 
+			</div>
 		</center>
 		<!-- 结束插入框架 -->
+		<br/>
+		<div style="float:left;width:31%;margin-left:1%;">
+			<br/>
+			<div style="text-align:center">
+				<b>个人娱乐</b>
+				<br/>
+				<a class="a2" href="https://www.bilibili.com/">哔哩哔哩动画</a>
+				<br/>
+				<a class="a2" href="https://www.yhdmp.net/">樱花动漫(p)</a>
+				<br/>
+				<a class="a2" href="https://xingye.me/game/index.php">星夜小游戏平台</a>
+			</div>
+		</div>
+		<div style="float:left;width:34%;margin-left:1%">
+			<br/>
+			<div style="text-align:center">
+				<b>学习</b>
+				<br/>
+				<a class="a2" href="https://www.zxx.edu.cn/eleEdu/">国家中小学智慧教育平台</a>
+				<br/>
+				<a class="a2" href="https://wx.qq.com/index.php">微信网页版</a>
+			</div>
+			</div>
+		</div>
+		<div style="float:right;width:31%;;margin-right: 1%">
+			<br/>
+			<div style="text-align:center">
+				<b>其他</b>
+			</div>
+		</div>
 		<div class="div_foot">
 		<!-- 引入css -->
 			<footer>
