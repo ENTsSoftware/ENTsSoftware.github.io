@@ -92,7 +92,7 @@
 			<br/>
 			<h4>使用简洁主页，成就高效人生</h4>
 			<div style='overflow:hidden'>
-				<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+				<form onsubmit="return baiduWithHttps(this)" action="https://www.baidu.com/baidu" target="_blank">
 					<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w"> 
 					<input class='bdtext' type="text"  onfocus="checkHttps" name="word"  size="80">
 					<input class='bdbtn' type="submit"value="搜索">
@@ -107,8 +107,8 @@
 				function c(j){b._option.protocol=j;b._option.checked=true}function e(){return(new Date()).getTime().toString(16)}
 				function h(l){var k=l.url?l.url:"https://www.baidu.com/con",j=document.createElement("script");
 				j.onload=function(){};
-				j.onerror=function(){c("http")};
-				j.src=k+"?from="+l.tn;
+				j.onerror=function(){c("https")};
+				j.src=k+"?from="+l.tn;+===========
 				document.body.appendChild(j)}b.callbacks=function(j){if(typeof j==="object"){if(j.s==0){c("https")}else{c("http")}}};
 					var a;b.useHttps=function(){if(this._option.timeout===true){
 					f();
