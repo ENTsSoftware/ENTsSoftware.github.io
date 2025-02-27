@@ -173,12 +173,15 @@ h5 {
     .flex {
         flex-direction: column;
     }
-    #left_part, #right_part {
+    #left_part, #right_part{
         width: 100% !important;
     }
     #mid_part {
         width: 100% !important;
         height: 5% !important;
+    }
+    #right_in {
+        width: 90% !important;
     }
     .flex > .info3:nth-child(2) {
         display: none;
