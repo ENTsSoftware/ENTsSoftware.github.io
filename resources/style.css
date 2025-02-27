@@ -134,13 +134,13 @@ body {
 }
 
 .logo span {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px){
     .logo span {
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .flex {
         flex-direction: column;
@@ -154,6 +154,15 @@ body {
     }
     .flex > .info3:nth-child(2) {
         display: none;
+    }
+    a {
+        font-size: 1.25em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    b {
+        font-size: 1.25em;
     }
 }
 
